@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XploitForce</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #00ffff;
+    }
+
+    .top-right-buttons {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background-color: #0066ff;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      margin: 0 5px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #0044cc;
+    }
+
+    .section {
+      display: none;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    .section.active {
+      display: block;
+    }
+
+    .executor-entry {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      padding: 15px;
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+
+    .status {
+      font-weight: bold;
+    }
+
+    .status.on {
+      color: #00ff00;
+    }
+
+    .status.off {
+      color: #ff3333;
+    }
+
+    .btn-download {
+      display: inline-block;
+      background: linear-gradient(135deg, #00ffff, #0066ff);
+      color: black;
+      padding: 6px 16px;
+      margin-top: 8px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.25s ease;
+      box-shadow: 0 0 10px #00ffff40;
+    }
+
+    .btn-download:hover {
+      background: linear-gradient(135deg, #00ccff, #0044ff);
+      transform: scale(1.05);
+      color: white;
+    }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const buttons = document.querySelectorAll('.btn');
+      const sections = document.querySelectorAll('.section');
+
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          const target = button.getAttribute('data-target');
+          sections.forEach(section => section.classList.remove('active'));
+          document.getElementById(target).classList.add('active');
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <div class="top-right-buttons">
+    <button class="btn" data-target="home">Home</button>
+    <button class="btn" data-target="android">Android</button>
+    <button class="btn" data-target="pc">PC</button>
+  </div>
+
+  <h1>XploitForce</h1>
+
+  <div id="home" class="section active">
+    <p>XploitForce adalah komunitas scripter Roblox resmi yang berdedikasi untuk berbagi script,
+      executor, dan support antar anggota agar bisa main Roblox dengan fitur maksimal dan aman.</p>
+    <p>Komunitas ini diciptakan untuk membantu para scripter yang ingin belajar, berkolaborasi, dan
+      berinovasi tanpa takut terkena banned atau virus. Kami percaya kekuatan ada di tangan bersama.</p>
+    <a href="#" class="btn-download">🔗 Join Komunitas XploitForce</a>
+  </div>
+
+  <div id="android" class="section">
+    <h2>Executor Android</h2>
+    <div class="executor-entry">arceus v1.7.1 <span class="status on">🟢</span><br><a class="btn-download" href="https://android.spdmteam.com/">🔽 Download</a></div>
+    <div class="executor-entry">krnl v2.677 <span class="status on">🟢</span><br><a class="btn-download" href="https://wrdcdn.net/r/54921/1749933066683/krnl_release_2.677.762_2025.6.15_32.apk">🔽 Download</a></div>
+    <div class="executor-entry">codex v2.677 <span class="status on">🟢</span><br><a class="btn-download" href="https://www.mediafire.com/file/p0taxko3v9c2sr9/Codex_v2.677.762.apk/file/file">🔽 Download</a></div>
+    <div class="executor-entry">cryptic v2.677 <span class="status on">🟢</span><br><a class="btn-download" href="https://www.mediafire.com/file/5oyfrfq1dodn0k0/Cryptic_2.673.713_VNG.apk/file">🔽 Download</a></div>
+    <div class="executor-entry">vornex v2.673 <span class="status on">🟢</span><br><a class="btn-download" href="https://www.mediafire.com/file/y399dq8rsycrsfz/Vornex_Android.apk/file">🔽 Download</a></div>
+    <div class="executor-entry">h202 v2.671 <span class="status off">🔴</span><br><a class="btn-download" href="https://mega.nz/file/uM1ATIYD#72MbVmVd--xgYRcJCfV-RBdBqCn8Vpnrwr-BjKhMEqY">🔽 Download</a></div>
+    <div class="executor-entry">delta v2.676 <span class="status on">🟢</span><br><a class="btn-download" href="https://delta.webfiles.pro/file/Delta-2.676.531.apk">🔽 Download</a></div>
+    <div class="executor-entry">fluxus v2.673 <span class="status on">🟢</span><br><a class="btn-download" href="https://webfiles.pro/file/Fluxus82.apk">🔽 Download</a></div>
+    <div class="executor-entry">frostware v2.675 <span class="status off">🔴</span><br><a class="btn-download" href="https://www.mediafire.com/file/ohdzdero6w3xeiu/Frostware+-+GenX+V2.apk/file">🔽 Download</a></div>
+    <div class="executor-entry">ronix v2.675 <span class="status on">🟢</span><br><a class="btn-download" href="https://wrdcdn.net/r/154522/1750108167637/Ronix_676.apk">🔽 Download</a></div>
+    <div class="executor-entry">evon v2.676 <span class="status on">🟢</span><br><a class="btn-download" href="https://evon.cc/android/dl-a/Evon.apk">🔽 Download</a></div>
+    <div class="executor-entry">trigon v2.676 <span class="status on">🟢</span><br><a class="btn-download" href="https://www.mediafire.com/file/bce5sy52kpo5ndw/Trigon_v2.676.apk/file">🔽 Download</a></div>
+    <div class="executor-entry">vega X v2.676 <span class="status on">🟢</span><br><a class="btn-download" href="https://github.com/1f0yt/community/releases/download/Vegax/Vega.X.apk">🔽 Download</a></div>
+  </div>
+
+  <div id="pc" class="section">
+    <h2>Executor Windows (PC)</h2>
+    <div class="executor-entry">bunni lol <span class="status on">🟢</span><br><a class="btn-download" href="https://getbunni.lol/">🔽 Download</a></div>
+    <div class="executor-entry">zenith <span class="status on">🟢</span><br><a class="btn-download" href="https://zenith.win/">🔽 Download</a></div>
+    <div class="executor-entry">swift <span class="status on">🟢</span><br><a class="btn-download" href="https://getswift.gg/download">🔽 Download</a></div>
+    <div class="executor-entry">velocity <span class="status on">🟢</span><br><a class="btn-download" href="https://getvelocity.live/">🔽 Download</a></div>
+    <div class="executor-entry">volcano <span class="status on">🟢</span><br><a class="btn-download" href="https://file.volcano.best/Download.zip">🔽 Download</a></div>
+    <div class="executor-entry">potassium <span class="status on">🟢</span><br><a class="btn-download" href="https://potassium.pro/">🔽 Download</a></div>
+    <div class="executor-entry">plutora <span class="status on">🟢</span><br><a class="btn-download" href="https://wrdcdn.net/r/87882/1747944758923/plutora%20v2.0.0.zip">🔽 Download</a></div>
+    <div class="executor-entry">seliware <span class="status on">🟢</span><br><a class="btn-download" href="https://seliware.com/">🔽 Download</a></div>
+    <div class="executor-entry">jjsploit <span class="status on">🟢</span><br><a class="btn-download" href="https://github.com/wcrddn/wcrddn.github.io/raw/refs/heads/main/0605/jjsploit_8.15.0_x64_en-US.msi">🔽 Download</a></div>
+    <div class="executor-entry">solara <span class="status on">🟢</span><br><a class="btn-download" href="https://getsolara.dev/download/static/files/BootstrapperNew.exe">🔽 Download</a></div>
+    <div class="executor-entry">trigon <span class="status off">🔴</span><br><a class="btn-download" href="https://gofile.io/d/leLUN2">🔽 Download</a></div>
+    <div class="executor-entry">drift <span class="status on">🟢</span><br><a class="btn-download" href="https://wrdcdn.net/r/118757/1748613440294/Drift1.0.3.zip">🔽 Download</a></div>
+    <div class="executor-entry">sirthurt <span class="status on">🟢</span><br><a class="btn-download" href="https://sirhurt.net/">🔽 Download</a></div>
+    <div class="executor-entry">saturn x <span class="status on">🟢</span><br><a class="btn-download" href="https://saturn-x-site.vercel.app/Bootstrapper.exe">🔽 Download</a></div>
+    <div class="executor-entry">xeno <span class="status on">🟢</span><br><a class="btn-download" href="https://www.xeno.onl/download">🔽 Download</a></div>
+    <div class="executor-entry">revelix <span class="status off">🔴</span><br><a class="btn-download" href="https://filerift.com/file/Hr0PxidPHf">🔽 Download</a></div>
+    <div class="executor-entry">awp <span class="status off">🔴</span><br><a class="btn-download" href="https://buyawp.gg/">🔽 Download</a></div>
+    <div class="executor-entry">ronix <span class="status off">🔴</span><br><a class="btn-download" href="https://cdnwrd2.com/r/154522/1743965069251/Bootstrapper.exe">🔽 Download</a></div>
+    <div class="executor-entry">wave <span class="status off">🔴</span><br><a class="btn-download" href="https://getwave.gg/">🔽 Download</a></div>
+  </div>
+
+</body>
+</html>
